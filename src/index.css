@@ -1,0 +1,88 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  background-color: #fefffe;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  cursor: url("/src/assets/cursor.png") 0 0, auto;
+} */
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  cursor: url("/src/assets/cursor.png") 0 0, auto;
+
+  /* variables para ajustar la intensidad sin tocar varias líneas */
+  --grid-color: 0, 0, 0;
+  /* color en formato R,G,B (aquí negro) */
+  --grid-alpha-small: 0.015;
+  /* opacidad de la rejilla fina */
+  --grid-alpha-large: 0.03;
+  /* opacidad de la rejilla más espaciada */
+
+  /* fondo y rejilla MUY sutil */
+  background-color: #ffffff88;
+  /* fondo semitransparente por si hay capas debajo */
+  background-image:
+    linear-gradient(to right, rgba(var(--grid-color), var(--grid-alpha-small)) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(var(--grid-color), var(--grid-alpha-small)) 1px, transparent 1px),
+    linear-gradient(to right, rgba(var(--grid-color), var(--grid-alpha-large)) 1.2px, transparent 1.2px),
+    linear-gradient(to bottom, rgba(var(--grid-color), var(--grid-alpha-large)) 1.2px, transparent 1.2px);
+  background-size: 30px 30px, 30px 30px, 30px 30px, 30px 30px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+button:hover,
+a:hover,
+input:hover {
+  cursor: url("/src/assets/cursor_click.png") 0 0, auto;
+}
+
+/*Scrollbar cambiar estilo*/
+/* WebKit */
+::-webkit-scrollbar {
+  width: 14px; /* MÁS ANCHA */
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0d12; /* más oscuro */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.35),
+    rgba(255, 255, 255, 0.15)
+  );
+  border-radius: 12px;
+  border: 3px solid #0b0d12; /* separa y da efecto flotante */
+}
+
+/* Hover potente */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.25)
+  );
+}

@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+.div-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    /*30px*/
+    height: 500px;
+    /*border: 1px solid #1d1d1da4;
+    background-color: #fefffe;*/
+    background-color: #fefffe27;
+}
+
+h1 {
+    font-family: "Google Sans", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #1d1d1d;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.button-loginGoogle {
+    background-color: #fefffe;
+    border: 1px solid #1d1d1d;
+    border-radius: 10px;
+    color: #1d1d1d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+    width: 330px;
+    height: 50px;
+    font-size: 16px;
+    font-family: "Google Sans", sans-serif;
+    font-weight: 600;
+    transition: outline-offset 90ms ease, background-color 300ms ease;
+}
+
+.button-loginGoogle img {
+    width: 27px;
+    height: 27px;
+    object-fit: contain;
+    transition: filter 300ms ease;
+}
+
+.button-loginGoogle:hover {
+    outline: 2px dashed #1d1d1d;
+    outline-offset: 4px;
+    background-color: #7fd856ce;
+}
+
+.button-loginGoogle:hover img {
+    filter: brightness(0) saturate(100%);
+}
+
+p {
+    font-family: "Google Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #1d1d1d;
+    margin-top: 15px;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 13px;
+}
+
+.input {
+    background-color: #eaebeb;
+    border: 1px solid #1d1d1d;
+    box-sizing: border-box;
+    width: 330px;
+    height: 50px;
+    font-family: "Google Sans", sans-serif;
+    border-radius: 10px;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #000;
+}
+
+.input[type="email"]:-webkit-autofill {
+    -webkit-text-fill-color: #000;
+    -webkit-box-shadow: 0 0 0px 1000px #eaebeb inset;
+    /* fondo */
+}
+
+.input:hover,
+.input:focus {
+    background-color: #d4d4d4;
+}
+
+.button-loginEmail {
+    background-color: #ffc353;
+    border: 1px solid #1d1d1d;
+    border-radius: 10px;
+    color: #1d1d1d;
+    box-sizing: border-box;
+    width: 330px;
+    height: 50px;
+    font-size: 16px;
+    font-family: "Google Sans", sans-serif;
+    font-weight: 600;
+    transition: outline-offset 90ms ease, background-color 300ms ease;
+    margin-bottom: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-loginEmail:hover {
+    background-color: #ffaf19;
+    outline: 2px dashed #1d1d1d;
+    outline-offset: 4px;
+}
+
+.link-register {
+    color: #0059ff;
+    text-decoration: none;
+}
+
+span {
+    color: #656e7c;
+}
+
+.button-loginEmail img {
+    width: 0px;
+    height: 0px;
+    margin-right: 0px;
+    transition: all 0.3s ease;
+}
+
+.button-loginEmail:hover img {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+    margin-right: 5px;
+}
+
+#p-eslogan {
+    margin-top: -5px;
+}
+
+#header-login {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    opacity: 0.95;
+}
+
+#vendy-logo {
+    width: 70px;
+    height: 70px;
+    opacity: 1;
+    /* opacidad baja */
+    filter: grayscale(100%) brightness(10) invert(1);
+}
+
+.header-div-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.header-div-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    height: 43px;
+    font-family: "Winky Sans", sans-serif;
+}
+
+
+.header-div-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    height: 17px;
+}
+
+#img-element {
+    position: absolute;
+    width: 250px;
+    right: 29%;
+    bottom: 24%;
+    transform: rotate(1deg);
+}
+
+#p-login {
+    margin-top: -10px;
+    width: 450px;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #131313;
+    font-size: 18px;
+    font-weight: 400;
+    background-size: 1000px 95px;
+    width: 90%;
+    text-decoration: underline;
+    text-decoration-color: #0000000e;
+}
+
+#h1-register {
+    font-size: 28px;
+    width: 100%;
+}
+
+label {
+    text-align: start;
+    color: #1d1d1d;
+    margin: 0;
+}
+
+#register-element {
+    position: absolute;
+    width: 250px;
+    right: 27%;
+    bottom: 30%;
+    transform: rotate(1deg);
+}
+
+
+/*Resolucion de pantalla para el elemento*/
+
+@media (max-width: 2000px) {
+    #register-element {
+        right: 28%;
+    }
+}
+
+@media (max-width: 1670px) {
+    #img-element {
+        right: 26%;
+    }
+
+    #register-element {
+        right: 23%;
+    }
+}
+
+@media (max-width: 1520px) {
+    #img-element {
+        right: 18%;
+    }
+
+    #register-element {
+        right: 13%;
+    }
+}
+
+@media (max-width: 1140px) {
+    #img-element {
+        right: 10%;
+    }
+
+    #register-element {
+        right: 5%;
+    }
+}
+
+
+@media (max-width: 905px) {
+    #img-element {
+        right: 5%;
+    }
+
+    #register-element {
+        right: 1%;
+    }
+}
+
+@media (max-width: 805px) {
+    #img-element {
+        right: 1%;
+    }
+
+    #register-element {
+        display: none;
+    }
+}
+
+@media (max-width: 740px) {
+    #img-element {
+        display: none;
+    }
+}
+
+
+@media (max-height: 913px) {
+    #img-element {
+        bottom: 20%;
+    }
+
+    #register-element {
+        bottom: 27%;
+    }
+}
+
+@media (max-height: 785px) {
+    #img-element {
+        bottom: 15%;
+    }
+
+    #register-element {
+        bottom: 20%;
+    }
+}
+
+@media (max-height: 640px) {
+    #img-element {
+        bottom: 13%;
+    }
+    
+}
+
+@media (max-height: 595px) {
+    #img-element {
+        display: none;
+    }
+
+    #register-element {
+        display: none;
+    }
+}

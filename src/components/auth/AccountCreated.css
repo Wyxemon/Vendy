@@ -1,0 +1,31 @@
+.account-created-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #4BB543;
+    background-color: #cbffcb;
+    border-radius: 5px;
+    font-size: 14px;
+    position: absolute;
+    top: 10px;
+    width: 350px;
+    height: 30px;
+    animation: slideDown 0.4s ease forwards;
+}
+
+.account-created-container p {
+    color: #3b7037;
+    margin: 0;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-50px); /* empieza más arriba */
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0); /* llega a su posición */
+        opacity: 1;
+    }
+}

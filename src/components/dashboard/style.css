@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mogra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Freckle+Face&family=Mogra&family=Rubik+Iso&display=swap');
+
+
+#div-dashboard {
+    background-color: transparent;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+#div-dashboard h1 {
+    color: #1d1d1d;
+    font-size: 3rem;
+    font-family: "Mogra", system-ui;
+    /*Mogra, Freckle Face, Chewy, Rubik Iso*/
+}
+
+
+#div-dashboard p {
+    color: #1d1d1d;
+    font-size: 1rem;
+}
+
+#div-dashboard-left {
+    background-color: #fefffe;
+    height: 100%;
+    width: 50px;
+}
+
+#div-dashboard-right {
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#div-dashboard-right-menu {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#div-right-menu-code {
+    background-color: #fefffe;
+    width: 320px;
+    height: 70px;
+    box-sizing: border-box;
+    border: 1px solid #1d1d1dab;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    transition: outline-offset 90ms ease, background-color 300ms ease, transform 200ms ease;
+    gap: 5px;
+    border-radius: 3px;
+    background-color: #aeeb0791;
+}
+
+#div-right-menu-code p {
+    font-size: 26px;
+    padding: 0;
+    margin: 0;
+    color: #111;
+    font-family: "Google Sans", system-ui;
+    /*Mogra, Freckle Face, Chewy, Rubik Iso*/
+    font-weight: 800;
+}
+
+#div-right-menu-code:hover {
+    outline: 2px dashed #1d1d1d;
+    outline-offset: 4px;
+    transform: scale(1.02);
+}
+
+#div-right-menu-code #img-arrow {
+    width: 0px;
+    height: 0px;
+    padding-right: 5px;
+    transition: width 300ms ease, height 300ms ease;
+}
+
+#div-right-menu-code:hover #img-arrow {
+    width: 20px;
+    height: 20px;
+}
+
+#img-element-dashboard {
+    width: 270px;
+    height: auto;
+    position: absolute;
+    right: 520px;
+    bottom: 280px;
+    transform: rotate(5deg);
+}
+
+/*#98de76*/
+
+#div-dashboard-right {
+    opacity: 0;
+    animation: fadeIn 500ms forwards;
+    /* 1s duración, forwards mantiene el estado final */
+}
+
+#img-refresh {
+    width: 40px;
+    height: 40px;
+    animation: rotateAnimation 800ms linear infinite;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes rotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.btn-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: scale(1);
+    display: flex;
+}
+
+.hide {
+    opacity: 0;
+    transform: scale(0.6);
+    pointer-events: none;
+}
+
+.hide.final {
+    display: none;
+}
+
+@media (max-width: 1800px) {
+    #img-element-dashboard {
+        right: 400px;
+    }
+    
+}
+
+@media (max-width: 1600px) {
+    #img-element-dashboard {
+        right: 200px;
+    }
+    
+}
+
+@media (max-width: 1200px) {
+    #img-element-dashboard {
+        right: 100px;
+    }
+    
+}
+
+@media (max-width: 1000px) {
+    #img-element-dashboard {
+        right: 50px;
+    }
+    
+}
+
+@media (max-width: 950px) {
+    #img-element-dashboard {
+        right: 10px;
+    }
+    
+}
+
+
+@media (max-width: 850px) {
+    #img-element-dashboard {
+        right: 10px;
+        display: none;
+    }
+    
+}
+
+
+/*Max height*/
+
+@media (max-height: 913px) {
+    #img-element-dashboard {
+        bottom: 27%;
+    }
+}
+
+@media (max-height: 785px) {
+    #img-element-dashboard {
+        bottom: 20%;
+    }
+}
+
+@media (max-height: 640px) {
+    #img-element-dashboard {
+        bottom: 13%;
+    }
+    
+}
+
+@media (max-height: 595px) {
+    #img-element-dashboard {
+        display: none;
+    }
+}

@@ -1,0 +1,71 @@
+.div-profile-interface {
+    background-color: #ececec;
+    width: 600px;
+    height: 200px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-family: "Google Sans", sans-serif;
+    padding: 10px 25px;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.div-profile-interface h2 {
+    font-family: "Google Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000fa;
+    font-size: 1.5em;
+    margin: 0;
+    padding-top: 10px;
+    text-align: left;
+}
+
+.div-profile-interface p {
+    font-family: "Google Sans", sans-serif;
+    font-size: 14px;
+    color: #000000d7;
+    margin: 5px 0;
+    text-align: left;
+}
+
+.div-profile-interface input {
+    width: 300px;
+    padding-left: 5px;
+    height: 40px;
+    margin: 10px 0;
+    border-radius: 1px;
+    background-color: transparent;
+    color: #000000d7;
+    box-sizing: border-box;
+    font-family: "Google Sans", sans-serif;
+    outline: none;
+    font-size: 14px;
+    border: none;
+    border: 1px solid #00000049;
+    padding-left: 15px;
+}
+
+.div-profile-interface div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.div-profile-interface button {
+    background-color: #ff6b57e3;
+    border: 1px solid #0000005d;
+    color: #000;
+    font-size: 14px;
+    font-family: "Google Sans", sans-serif;
+    font-weight: 400;
+    padding: 10px 20px;
+    bottom: 10px;
+    right: 10px;
+    width: 150px;
+    height: 40px;
+}
+
+.div-profile-interface button:hover {
+    background-color: #ff634e;
+}
