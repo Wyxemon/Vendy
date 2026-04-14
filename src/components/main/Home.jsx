@@ -4,10 +4,10 @@ import imgHome from '../../assets/homeImage.jpg';
 import { useNavigate } from 'react-router-dom';
 
 function Home() {
-  const navigator = useNavigate();
+  const navigate = useNavigate();
   
   function login() {
-    navigator('/login');
+    navigate('/login');
   }
 
   return (
@@ -20,11 +20,11 @@ function Home() {
       <div className='div-body'>
         <div className='div-text-main'>
           <h1>Digitaliza tu negocio creando una tienda</h1>
-          <p>Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
+          <p>Nuestra plataforma te permite crear y gestionar tu tienda en línea de manera fácil y rápida. Ofrece una experiencia de compra intuitiva para tus clientes y herramientas poderosas para administrar tu inventario y ventas.</p>
           <button onClick={login}>Empieza ya</button>
         </div>
         <div className='div-img-main'>
-          <img src={imgHome} alt="Vendy Logo" />
+          <img src={imgHome} alt="Imagen de tienda en línea" />
         </div>
       </div>
     </div>
