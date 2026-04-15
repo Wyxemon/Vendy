@@ -20,7 +20,7 @@ function Home() {
       <div className='div-body'>
         <div className='div-text-main'>
           <h1>Digitaliza tu negocio creando una tienda</h1>
-          <p>Nuestra plataforma te permite crear y gestionar tu tienda en línea de manera fácil y rápida. Ofrece una experiencia de compra intuitiva para tus clientes y herramientas poderosas para administrar tu inventario y ventas.</p>
+          <p>Crea tu propia tienda con Vendy y comienza a automatizar tus ventas. Tu negocio necesita una pantalla para mostrar tu catálogo y procesar pedidos de manera eficiente.</p>
           <button id='button-main' onClick={login}>Empieza ya</button>
         </div>
         <div className='div-img-main'>

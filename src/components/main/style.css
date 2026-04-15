@@ -104,6 +104,7 @@ header img {
     margin-bottom: 20px;
     text-align: left;
     width: 500px;
+    margin-bottom: 0px;
 }
 
 .div-text-main p {
@@ -112,6 +113,7 @@ header img {
     text-align: center;
     width: 90%;
     text-align: left;
+    margin-bottom: 25   px;
 }
 
 .div-text-main button {
@@ -136,6 +138,30 @@ header img {
     background-color: #ffaf19;
     outline: 2px dashed #1d1d1d;
     outline-offset: 4px;
+}
+
+@media (max-width: 5000px) {
+    .div-text-main h1 {
+        font-size: 45px;
+        width: 70%;
+    }
+
+    .div-text-main p {
+        font-size: 20px;
+        width: 80%;
+    }   
+}
+
+@media (max-width: 1200px) {
+    .div-text-main h1 {
+        font-size: 40px;
+        width: 100%;
+    }
+
+    .div-text-main p {
+        font-size: 18px;
+        width: 100%;
+    }   
 }
 
 @media (max-width: 1024px) {
