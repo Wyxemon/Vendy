@@ -152,6 +152,18 @@ header img {
     }   
 }
 
+@media (max-width: 1500px) {
+    .div-text-main h1 {
+        font-size: 45px;
+        width: 100%;
+    }
+
+    .div-text-main p {
+        font-size: 20px;
+        width: 80%;
+    }   
+}
+
 @media (max-width: 1200px) {
     .div-text-main h1 {
         font-size: 40px;
