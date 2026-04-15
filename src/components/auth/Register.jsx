@@ -7,10 +7,14 @@ import vendyLogo from '../../assets/vendy.svg'
 import registerElement from '../../assets/register_element.png'
 import AccountCreated from './AccountCreated';
 
+import { useNavigate } from "react-router-dom";
+
 function Register() {
     const emailRef = useRef();
     const passwordRef = useRef();
     const [accountCreated, setAccountCreated] = useState(false);
+
+    const navigate = useNavigate();
 
     function handleRegister(event) {
         event.preventDefault();
@@ -28,11 +32,7 @@ function Register() {
                         <h2>Register</h2>
                     </div>
                     <div className='header-div-menu'>
-                        <p>Inicio</p>
-                        <p>Editar</p>
-                        <p>Ver</p>
-                        <p>Importar</p>
-                        <p>Formato</p>
+                        <p onClick={() => navigate("/")}>Inicio</p>
                     </div>
                 </div>
             </div>

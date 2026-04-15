@@ -21,7 +21,7 @@ function Home() {
         <div className='div-text-main'>
           <h1>Digitaliza tu negocio creando una tienda</h1>
           <p>Nuestra plataforma te permite crear y gestionar tu tienda en línea de manera fácil y rápida. Ofrece una experiencia de compra intuitiva para tus clientes y herramientas poderosas para administrar tu inventario y ventas.</p>
-          <button onClick={login}>Empieza ya</button>
+          <button id='button-main' onClick={login}>Empieza ya</button>
         </div>
         <div className='div-img-main'>
           <img src={imgHome} alt="Imagen de tienda en línea" />

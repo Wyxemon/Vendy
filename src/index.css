@@ -54,7 +54,7 @@ body {
 
 button:hover,
 a:hover,
-input:hover {
+input:hover, .header-div-menu:hover {
   cursor: url("/src/assets/cursor_click.png") 0 0, auto;
 }
 

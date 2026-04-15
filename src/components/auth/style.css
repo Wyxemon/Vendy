@@ -198,6 +198,14 @@ span {
     height: 17px;
 }
 
+.header-div-menu {
+    border-bottom: 2px solid transparent;
+}
+
+.header-div-menu:hover {
+    border-bottom: 2px dashed #1d1d1d;
+}
+
 #img-element {
     position: absolute;
     width: 250px;

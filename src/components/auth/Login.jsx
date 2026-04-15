@@ -34,6 +34,10 @@ function Login() {
     }
   }
 
+  function toHome() {
+    navigate("/");
+  }
+
   async function signInWithGoogleLogin() {
     try {
       const user = await signInWithGoogle();
@@ -60,11 +64,7 @@ function Login() {
               <h2>Login</h2>
             </div>
             <div className="header-div-menu">
-              <p>Inicio</p>
-              <p>Editar</p>
-              <p>Ver</p>
-              <p>Importar</p>
-              <p>Formato</p>
+              <p onClick={() => navigate("/")}>Inicio</p>
             </div>
           </div>
         </div>
