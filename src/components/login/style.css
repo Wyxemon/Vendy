@@ -1,0 +1,183 @@
+.div-body-login-window {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.div-login-window {
+    border-radius: 30px;
+    width: 450px;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    box-sizing: border-box;
+
+    /* variables opcionales para controlar intensidad */
+    --grid-color: 0, 0, 0;
+    --grid-alpha-small: 0.0015;
+    --grid-alpha-large: 0.015;
+
+    background-color: #ffffff;
+    background-image:
+        linear-gradient(to right, rgba(var(--grid-color), var(--grid-alpha-small)) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(var(--grid-color), var(--grid-alpha-small)) 1px, transparent 1px),
+        linear-gradient(to right, rgba(var(--grid-color), var(--grid-alpha-large)) 1.2px, transparent 1.2px),
+        linear-gradient(to bottom, rgba(var(--grid-color), var(--grid-alpha-large)) 1.2px, transparent 1.2px);
+    background-size: 30px 30px;
+    background-repeat: repeat;
+    border-radius: 12px;
+    border: 1px solid #1d1d1d;
+    position: relative;
+}
+
+.div-login-window h1 {
+    font-family: "Google Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #1d1d1d;
+    text-align: left;
+    margin-left: 16px;
+    margin-bottom: 11px;
+}
+
+.div-login-window #p-description {
+    font-family: "Google Sans", sans-serif;
+    font-size: 14px;
+    color: #1d1d1d;
+    margin-bottom: 30px;
+    text-align: left;
+    margin-left: 16px;
+    margin-top: 0;
+}
+
+#p-description span {
+    color: #007bff;
+    border-bottom: 1px solid #007bff;
+}
+
+.form-inputs-login-window {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 13px;
+    width: 100%;
+    align-items: center;
+}
+
+
+.input-login-window {
+    background-color: #eaebeb;
+    border: 1px solid #1d1d1d;
+    box-sizing: border-box;
+    width: 330px;
+    height: 50px;
+    font-family: "Google Sans", sans-serif;
+    border-radius: 10px;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #000;
+}
+
+.input-login-window[type="email"]:-webkit-autofill {
+    -webkit-text-fill-color: #000;
+    -webkit-box-shadow: 0 0 0px 1000px #eaebeb inset;
+}
+
+.input-login-window:hover,
+.input-login-window:focus {
+    background-color: #d4d4d4;
+}
+
+.button-login-window {
+    background-color: #ffc353;
+    border: 1px solid #1d1d1d;
+    border-radius: 10px;
+    color: #1d1d1d;
+    box-sizing: border-box;
+    width: 330px;
+    height: 50px;
+    font-size: 16px;
+    font-family: "Google Sans", sans-serif;
+    font-weight: 600;
+    transition: outline-offset 90ms ease, background-color 300ms ease;
+    margin-bottom: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-login-window:hover {
+    background-color: #ffaf19;
+    outline: 2px dashed #1d1d1d;
+    outline-offset: 4px;
+}
+
+.button-login-window img {
+    width: 0px;
+    height: 0px;
+    margin-right: 0px;
+    transition: all 0.3s ease;
+}
+
+.button-login-window:hover img {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+    margin-right: 5px;
+}
+
+#button-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #1d1d1d;
+    width: 40px;
+    height: 40px;
+    background-color: #dcdcdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #1d1d1d;
+}
+
+#button-close:hover {
+    background-color: #ff5757;
+    outline: 2px solid #00000012;
+    outline-offset: 2px;
+}
+
+#button-close:hover img {
+    filter: invert(1);
+}
+
+#span-error {
+    color: #ff4a4a;
+    font-size: 14px;
+    text-align: center;
+    border-bottom: 1px solid #ff4a4a;
+    animation: fadeIn 500ms ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

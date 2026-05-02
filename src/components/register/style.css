@@ -1,0 +1,110 @@
+.div-body-register-window {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.div-register-window {
+    border-radius: 30px;
+    width: 450px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    box-sizing: border-box;
+
+    /* variables opcionales para controlar intensidad */
+    --grid-color: 0, 0, 0;
+    --grid-alpha-small: 0.0015;
+    --grid-alpha-large: 0.015;
+
+    background-color: #ffffff;
+    background-image:
+        linear-gradient(to right, rgba(var(--grid-color), var(--grid-alpha-small)) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(var(--grid-color), var(--grid-alpha-small)) 1px, transparent 1px),
+        linear-gradient(to right, rgba(var(--grid-color), var(--grid-alpha-large)) 1.2px, transparent 1.2px),
+        linear-gradient(to bottom, rgba(var(--grid-color), var(--grid-alpha-large)) 1.2px, transparent 1.2px);
+    background-size: 30px 30px;
+    background-repeat: repeat;
+    border-radius: 12px;
+    border: 1px solid #1d1d1d;
+    position: relative;
+}
+
+.div-register-window h1 {
+    font-family: 'Google Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #1d1d1d;
+    margin-bottom: 0;
+    text-align: left;
+    margin-left: 1px;
+}
+
+.div-register-window p {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.input-email-register {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: #1d1d1d;
+    outline: none;
+    font-family: 'Google Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    height: 55px;
+}
+
+#button-continue {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #191919;
+    color: #fff;
+    font-family: 'Google Sans', sans-serif;
+    cursor: pointer;
+    font-family: 'Google Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+}
+
+#button-continue img {
+    width: 0px;
+    height: 0px;
+    filter: invert(1);
+    transition: all 0.3s ease;
+}
+
+#button-continue:hover img {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;;
+}
+
+#button-continue:hover {
+    background-color: #000;
+    outline: 1px solid #000;
+    outline-offset: 3px;
+}
+
+.div-register-window span {
+    font-family: 'Google Sans', sans-serif;
+    color: #008cff;
+    border-bottom: 1px solid #008cff;
+}

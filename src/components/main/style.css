@@ -1,0 +1,229 @@
+.div-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    height: 140px;
+}
+
+header img {
+    width: auto;
+    height: 63px;
+    margin-left: 20px;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#button-main-login {
+    background-color: #fff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Google Sans', sans-serif;
+    border: 1px solid #1d1d1d;
+    color: #000;
+    transition: outline-offset 90ms ease, background-color 300ms ease;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+#button-main-login:hover {
+    background-color: #98df76;
+    color: #1d1d1d;
+    outline: 2px solid #1d1d1d;
+    outline-offset: 4px;
+}
+
+#button-main-download {
+    background-color: #42417a;
+    border: 1px solid #1d1d1d;
+    border-radius: 10px;
+    color: #f3f3f3;
+    box-sizing: border-box;
+    font-size: 15px;
+    padding: 12px 25px;
+    font-family: "Google Sans", sans-serif;
+    font-weight: 600;
+    transition: background-color 300ms ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button-main-download img {
+    width: 0;
+    height: 0;
+    transition: all 0.3s ease;
+    margin: 0;
+    padding: 0;
+}
+
+#button-main-download:hover {
+    background-color: #30305a;
+    outline: 2px solid #1d1d1d;
+    outline-offset: 4px;
+}
+
+#button-main-download:hover img {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+/* body */
+.div-body div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.div-body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: #ffffffa5;
+    background: linear-gradient(to bottom, #ffffffa5 90%, #ffffff74 90%);
+    padding-top: 150px;
+}
+
+.div-body h1 {
+    font-size: 43px;
+    color: #000;
+    text-align: center;
+    width: 100%;
+    font-weight: 900;
+}
+
+.div-body p {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    width: 90%;
+    text-align: center;
+}
+
+#button-main {
+    background-color: #ffc353;
+    border: 1px solid #1d1d1d;
+    border-radius: 10px;
+    color: #1d1d1d;
+    box-sizing: border-box;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    font-family: "Google Sans", sans-serif;
+    font-weight: 600;
+    transition: outline-offset 90ms ease, background-color 300ms ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-body div {
+    background-color: #fff;
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+.div-body img {
+    border-radius: 10px;
+    width: 70%;
+    height: auto;
+}
+
+#button-main:hover {
+    background-color: #ffaf19;
+    outline: 2px dashed #1d1d1d;
+    outline-offset: 4px;
+}
+
+.div-body iframe {
+    width: 65%;
+    min-height: 800px;
+    border-radius: 10px;
+    border: 1px solid #1d1d1d2f;
+    transform-origin: top center;
+}
+
+#button-viewexample {
+    margin-top: 10px;
+    background-color: transparent;
+    border: none;
+    color: #000000ad;
+    font-family: "Google Sans", sans-serif;
+    border-bottom: 1px solid transparent;
+    font-weight: 800;
+}
+
+#button-viewexample:hover {
+    color: #0051ca;
+    border-bottom: 1px solid #0051ca;
+}
+
+
+/*responsive*/
+
+
+@media (max-width: 950px) {
+    .div-body iframe {
+        width: 90%;
+        min-height: 600px;
+    }
+}
+
+@media (max-width: 559px) {
+    .div-body iframe {
+        width: 90%;
+        min-height: 500px;
+    }
+
+    .div-body div {
+        width: 95%;
+    }
+
+    header {
+        height: auto;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 10px;
+        padding-bottom: 45px;
+    }
+
+    .div-main {
+        padding-top: 40px;
+    }
+}
+

@@ -1,0 +1,165 @@
+.div-shop-items {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+.div-left-menu {
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.div-right-menu {
+    width: 100%;
+    height: 100%;
+}
+
+.div-left-menu button {
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #111;
+  font-family: 'Google Sans', sans-serif;
+  font-size: 18px;
+  text-align: left;
+  border: 1px solid transparent;
+}
+
+.div-left-menu button:hover {
+  background-color: #f5f5f5;
+}
+
+.div-left-menu button.active {
+  border: 1px solid #1d1d1da6;
+  color: #fcfcfc;
+  background-color: #0a0a0aec;
+}
+
+.div-shop-products {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.div-items {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.div-items div {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+#button-upload-item {
+    width: 100px;
+    height: 100%;
+    background-color: #dcdcdc;
+    border: 1px solid #000;
+    border-radius: 10px;
+    outline: none;
+}
+
+.div-items h4 {
+    font-size: 20px;
+    margin: 0;
+    color: #000;
+    font-family: "Google Sans", sans-serif;
+    font-weight: 600;
+    text-align: left;
+}
+
+#p-description-item {
+    color: #666666;
+    font-family: "Google Sans", sans-serif;
+    margin: 0;
+    text-align: left;
+}
+
+#p-price-item {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    transform: translateY(-50%);
+}
+
+#button-upload-item:hover {
+    background-color: #a5a5a5;
+}
+
+
+#img-info-item {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.div-items:hover {
+    background-color: #fafafa;
+    border-radius: 15px;
+}
+
+#button-add-items {
+    background-color: #ffc353;
+    border: 1px solid #1d1d1d;
+    border-radius: 5px;
+    color: #1d1d1d;
+    box-sizing: border-box;
+    width: 99%;
+    height: 40px;
+    font-size: 14px;
+    font-family: "Google Sans", sans-serif;
+    font-weight: 600;
+    transition: background-color 300ms ease;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#button-add-items:hover {
+    background-color: #f7ab3b;
+    outline: 1px solid #1d1d1d;
+    outline-offset: 3px;
+}
+
+#button-upload-item:hover {
+    filter: brightness(85%);
+}
+
+#button-upload-item img {
+    display: none;
+}
+
+#button-upload-item:hover img {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    transform: scale(1.05);
+    display: inline;
+}
