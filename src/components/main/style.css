@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
 .div-main {
     position: absolute;
     top: 0;
@@ -9,6 +11,7 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 2450px;
 }
 
 header {
@@ -98,7 +101,7 @@ header div {
 }
 
 /* body */
-.div-body div {
+.div-body>div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -227,3 +230,260 @@ header div {
     }
 }
 
+/* lo siguiente */
+
+#div-info-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid #00000013;
+    padding: 20px;
+}
+
+#div-info-main h3 {
+    color: #000000e8;
+    font-family: 'Google sans', sans-serif;
+    font-size: 30px;
+    margin: 10px;
+    border-bottom: 1px dashed #000000e8;
+}
+
+#div-info-item {
+    width: 80%;
+    border-radius: 10px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    background-color: #0000001c;
+
+}
+
+#div-info-item img {
+    width: 30%;
+    height: 100%;
+    border-radius: 0;
+    object-fit: cover;
+}
+
+#div-right-info-item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#div-right-info-item h5 {
+    color: #000;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    text-align: left;
+    font-family: 'Google Sans', sans-serif;
+    margin-top: 20px;
+}
+
+#div-right-info-item p {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+#div-info-main > button {
+    width: 80%;
+    height: 40px;
+    background-color: #98df76;
+    border: 1px solid #000;
+    color: #000;
+    font-family: 'Google Sans', sans-serif;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#div-info-main h4 {
+    color: #000;
+    font-family: 'Google Sans', sans-serif;
+    font-size: 28px;
+    top: 350px;
+    background-color: #fff;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 1px solid #0000007c;
+}
+
+#div-vendy-view-info {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    border: 1px solid #000;
+    height: 85px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#div-left-vendy-view-info {
+    background-color: transparent;
+    width: 150px;
+    box-sizing: border-box;
+}
+
+#div-right-vendy-view-info {
+    flex: 1;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#div-left-vendy-view-info button {
+    background-color: #000;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Google Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+#div-right-vendy-view-info img {
+    width: auto;
+    height: 100%;
+}
+
+#div-right-vendy-view-info div {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 10px;
+}
+
+#div-right-vendy-view-info div h6 {
+    color: #000;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-family: 'Google sans', sans-serif;
+    margin-bottom: 3px;
+}
+
+#div-right-vendy-view-info div p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    text-align: left;
+    font-family: 'Google sans', sans-serif;
+    margin-bottom: 8px;
+}
+
+/*desktop*/
+
+#div-desktop-main {
+    width: 70%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#div-desktop-main h3 {
+    font-size: 44px;
+    font-family: 'Google Sans', sans-serif;
+    margin: 10px;
+    padding: 0;
+    color: #000;
+}
+
+#div-desktop-main p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+#div-desktop-main img {
+    width: 90%;
+    margin-top: 10px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+#div-desktop-main button {
+    font-size: 20px;
+    background-color: #1b1b1b;
+    border: none;
+    width: 210px;
+    height: 50px;
+    font-family: 'Google Sans', sans-serif;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    border: 2px solid #969696;
+    color: #fff;
+    font-weight: 600;
+}
+
+#div-desktop-main button img {
+    width: 23px;
+    height: 23px;
+    margin-bottom: 10px;
+}
+
+#div-desktop-main button:hover {
+    outline: 3px solid #0077ff;
+    outline-offset: 3px;
+}
+
+#div-final-info {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 30px;
+    width: 50%;
+    background-color: transparent;
+}
+
+#div-final-info img {
+    width: 240px;
+    margin: 0;
+    padding: 0;
+}
+
+#div-final-info p {
+    font-family: "EB Garamond", serif;
+}
+
+#div-final-info span {
+    color: #0051ca;
+    border-bottom: 1px solid #0051ca;
+}

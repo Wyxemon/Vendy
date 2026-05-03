@@ -5,6 +5,10 @@ import downloadImg from '../../assets/download.svg';
 import LoginWindow from '../login/LoginWindow';
 import { useEffect, useState } from 'react';
 import RegisterWindow from '../register/RegisterWindow';
+import img1 from '../../assets/image2.png';
+import hamburgesaImg from '../../assets/hamburgesa.png';
+
+import signature from '../../assets/firma.png'
 
 function Home() {
   const navigate = useNavigate();
@@ -69,6 +73,52 @@ function Home() {
           src="https://vendy-view.vercel.app/?email=ejemplo@vendy.com"
           frameBorder="0"
         />
+        <div id='div-desktop-main'>
+          <h3>Aplicación de escritorio para tu negocio</h3>
+          <p>
+            Lleva tu catálogo a una pantalla con la app de escritorio de Vendy.
+            Muestra tus productos como una carta digital o panel visual, ideal para restaurantes,
+            bares o tiendas que quieren ofrecer una experiencia moderna y profesional a sus clientes.
+          </p>
+          <button onClick={download}>
+            <img src={downloadImg} alt="Download" />
+            Descargar
+          </button>
+          <img src={img1} alt="" />
+        </div>
+        <div id='div-info-main'>
+          <h3>Añade tus productos, facil y rapido</h3>
+          <p>Con Vendy puedes crear y gestionar tu catálogo de productos de forma rápida y sencilla.
+            Añade imágenes, precios y descripciones en segundos, organiza todo a tu manera y mantén
+            tu negocio siempre actualizado sin complicaciones.
+          </p>
+          <div id='div-info-item'>
+            <img src={hamburgesaImg} alt="" />
+            <div id='div-right-info-item'>
+              <h5>The Buey</h5>
+              <p>Carne 100% de buey Valles del Esla®, cecina ahumada con salsa de yema de huevo, queso cheddar ahumado en pan estilo brioche.</p>
+            </div>
+          </div>
+          <button>Añadir producto</button>
+          <h4>Nosotros nos encargamos de mostrarlo</h4>
+          <div id='div-vendy-view-info'>
+            <div id='div-left-vendy-view-info'>
+              <button>Platos</button>
+            </div>
+            <div id='div-right-vendy-view-info'>
+              <img src={hamburgesaImg} alt="" />
+              <div>
+                <h6>The Buey</h6>
+                <p>Carne 100% de buey Valles del Esla®, cecina ahumada con salsa de yema de huevo, queso cheddar ahumado en pan estilo brioche.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id='div-final-info'>
+          <img src={signature} alt="" />
+          <p>"Quiero decir que lo más difícil nunca fue el camino en sí, sino el hecho de empezar. Lo normal es sentir miedo, pero con el tiempo te das cuenta de que todo es cuestión de dar el primer paso y confiar en el proceso."</p>
+          <span>Agradecimiento a todas las personas en estos 2 años</span>
+        </div>
       </div>
     </div>
   );
