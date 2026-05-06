@@ -5,7 +5,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NotFound from "./components/notFound/NotFound";
 import Dashboard from "./components/dashboard/Dashboard";
 import Home from "./components/main/Home";
-import Gracias from "./components/gracias/Gracias";
 
 function App() {
   localStorage.clear();
@@ -16,7 +15,6 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/gracias" element={<Gracias />} />
         <Route path="/" element={<Home />}></Route>
       </Routes>
     </BrowserRouter>

@@ -116,8 +116,7 @@ function Home() {
         </div>
         <div id='div-final-info'>
           <img src={signature} alt="" />
-          <p>"Quiero decir que lo más difícil nunca fue el camino en sí, sino el hecho de empezar. Lo normal es sentir miedo, pero con el tiempo te das cuenta de que todo es cuestión de dar el primer paso y confiar en el proceso."</p>
-          <span>Agradecimiento a todas las personas en estos 2 años</span>
+          <p>Desarrollado por Iñigo Viscarret Alvarez</p>
         </div>
       </div>
     </div>
