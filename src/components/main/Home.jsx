@@ -116,7 +116,7 @@ function Home() {
         </div>
         <div id='div-final-info'>
           <img src={signature} alt="" />
-          <p>Desarrollado por Iñigo Viscarret Alvarez</p>
+          <p>Desarrollado por Iñigo Viscarret Álvarez</p>
         </div>
       </div>
     </div>
