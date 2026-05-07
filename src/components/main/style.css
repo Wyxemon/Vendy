@@ -400,43 +400,69 @@ header div {
 /*desktop*/
 
 #div-desktop-main {
-    width: 70%;
-    background-color: #fff;
+    width: 75%;
+    background-color: transparent;
     border-radius: 10px;
-    padding: 40px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    border: 1px solid #00000059;
+}
 
+#div-desktop-main .desktop-left {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    height: 100%;
+}
+
+#div-desktop-main .desktop-right {
+    width: 55%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+}
+
+#div-desktop-main .desktop-right img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 1px solid #000;
 }
 
 #div-desktop-main h3 {
     font-size: 44px;
     font-family: 'Google Sans', sans-serif;
-    margin: 10px;
+    margin: 0;
     padding: 0;
     color: #000;
+    text-align: left;
 }
 
 #div-desktop-main p {
     font-size: 16px;
     color: #555;
     line-height: 1.6;
-}
-
-#div-desktop-main img {
-    width: 90%;
-    margin-top: 10px;
-    border-radius: 10px;
-    object-fit: cover;
+    margin: 0;
+    text-align: left;
 }
 
 #div-desktop-main button {
     font-size: 20px;
     background-color: #1b1b1b;
     border: none;
-    width: 210px;
+    width: 350px;
     height: 50px;
     font-family: 'Google Sans', sans-serif;
     border-radius: 10px;
@@ -448,18 +474,29 @@ header div {
     border: 2px solid #969696;
     color: #fff;
     font-weight: 600;
+    cursor: pointer;
 }
 
 #div-desktop-main button img {
     width: 23px;
     height: 23px;
-    margin-bottom: 10px;
+    margin: 0;
 }
 
 #div-desktop-main button:hover {
     outline: 3px solid #0077ff;
     outline-offset: 3px;
 }
+
+#div-desktop-main a {
+    text-align: left;
+    color: #0051ca;
+    font-family: 'Google Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*info*/
 
 #div-final-info {
     margin-top: 40px;

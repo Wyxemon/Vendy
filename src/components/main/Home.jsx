@@ -74,17 +74,23 @@ function Home() {
           frameBorder="0"
         />
         <div id='div-desktop-main'>
-          <h3>Aplicación de escritorio para tu negocio</h3>
-          <p>
-            Lleva tu catálogo a una pantalla con la app de escritorio de Vendy.
-            Muestra tus productos como una carta digital o panel visual, ideal para restaurantes,
-            bares o tiendas que quieren ofrecer una experiencia moderna y profesional a sus clientes.
-          </p>
-          <button onClick={download}>
-            <img src={downloadImg} alt="Download" />
-            Descargar
-          </button>
-          <img src={img1} alt="" />
+          <div class="desktop-left">
+            <h3>Aplicación de escritorio para tu negocio</h3>
+            <p>
+              Lleva tu catálogo a una pantalla con la app de escritorio de Vendy.
+              Muestra tus productos como una carta digital o panel visual, ideal para restaurantes,
+              bares o tiendas que quieren ofrecer una experiencia moderna y profesional a sus clientes.
+            </p>
+            <button onClick={download}>
+              <img src={downloadImg} alt="Download" />
+              Descargar Windows
+            </button>
+            <a href="https://github.com/Wyxemon/Vendy-desktop/releases/download/1.0.0/Vendy-arm64.dmg" download>
+              Descargar en MacOS
+            </a>          </div>
+          <div class="desktop-right">
+            <img src={img1} alt="" />
+          </div>
         </div>
         <div id='div-info-main'>
           <h3>Añade tus productos, facil y rapido</h3>
