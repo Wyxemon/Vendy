@@ -7,8 +7,9 @@ import { useEffect, useState } from 'react';
 import RegisterWindow from '../register/RegisterWindow';
 import img1 from '../../assets/image2.png';
 import hamburgesaImg from '../../assets/hamburgesa.png';
-
+import arrowDown from '../../assets/arrowDown.svg'
 import signature from '../../assets/firma.png'
+import openNew from '../../assets/openNew.svg'
 
 function Home() {
   const navigate = useNavigate();
@@ -69,10 +70,16 @@ function Home() {
           <button id='button-main' onClick={() => setShowRegister(true)}>Empieza ya</button>
           <button id='button-viewexample' onClick={exampleUser}>Ver un ejemplo</button>
         </div>
-        <iframe
-          src="https://vendy-view.vercel.app/?email=ejemplo@vendy.com"
-          frameBorder="0"
-        />
+        <div id='div-iframe'>
+          <button onClick={() => {window.open('https://vendy-view.vercel.app/?email=ejemplo@vendy.com', '_blank')}}>
+            <img src={openNew} alt="" />
+          </button>
+          <img src={arrowDown} alt="" />
+          <iframe
+            src="https://vendy-view.vercel.app/?email=ejemplo@vendy.com"
+            frameBorder="0"
+          />
+        </div>
         <div id='div-desktop-main'>
           <div class="desktop-left">
             <h3>Aplicación de escritorio para tu negocio</h3>
