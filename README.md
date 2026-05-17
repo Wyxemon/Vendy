@@ -1,63 +1,63 @@
 # Vendy
 
-[**Vendy**](https://vendyapp.vercel.app/) zure denda sortzeko eta zure negozioko produktuak mahaigaineko aplikazio baten bidez edo zuzenean webgunetik erakusteko web aplikazio bat da.
+[**Vendy**](https://vendyapp.vercel.app/) es una aplicación web para crear tu tienda y mostrar los productos de tu negocio mediante una aplicación de escritorio o directamente desde la web.
 
-Software hau Vendy aplikazioen suitearen parte da. **Vite** erabiliz garatu da, eta erabiltzaile interfazea egiteko **React** erabili da. [**Proiektuaren egitura**](https://githubtree.mgks.dev/repo/Wyxemon/Vendy/main/)
+Este software forma parte de la suite de aplicaciones de Vendy. Ha sido desarrollado con **Vite**, utilizando **React** para la interfaz de usuario. [**Estructura del proyecto**](https://githubtree.mgks.dev/repo/Wyxemon/Vendy/main/)
 
 <p align="left">
   <a href="https://vendyapp.vercel.app/">
-    <img src="https://img.shields.io/badge/Webgunea_ikusi-0078D6?style=for-the-badge&logo=googlechrome&logoColor=white" />
+    <img src="https://img.shields.io/badge/Ver_web-0078D6?style=for-the-badge&logo=googlechrome&logoColor=white" />
   </a>
-  <a href="https://github.com/Wyxemon/Vendy">
-    <img src="https://img.shields.io/badge/Español-24292F?style=for-the-badge&logo=googletranslate&logoColor=white" />
+  <a href="https://github.com/Wyxemon/Vendy/README-eus.md">
+    <img src="https://img.shields.io/badge/Euskera-24292F?style=for-the-badge&logo=googletranslate&logoColor=white" />
   </a>
 </p>
 
-<sub>Proiektua deskargatzen baduzu, baliteke segurtasun sistemengatik zure kontuan ezin sartzea, hau web ofizialean bakarrik baitago erabilgarri.</sub>
+<sub>En caso de descargar el proyecto, es posible que debido a los sistemas de seguridad no puedas acceder a tu cuenta, ya que esta solo está disponible en la web oficial.</sub>
 
 
 
-## Erabilitako teknologiak
+## Tecnologías utilizadas
 
-| Teknologia | Deskribapena |
+| Tecnología | Descripción |
 |---|---|
-| [React](https://react.dev/) | Erabiltzaile interfazeak sortzeko liburutegia |
-| [Vite](https://vite.dev/) | Frontend proiektuetarako garapen tresna azkarra |
-| [Firebase](https://firebase.google.com/?hl=es-419) | Backend eta zerbitzuetarako plataforma |
+| [React](https://react.dev/) | Librería para construir interfaces de usuario |
+| [Vite](https://vite.dev/) | Herramienta de desarrollo rápida para proyectos frontend |
+| [Firebase](https://firebase.google.com/?hl=es-419) | Herramienta de desarrollo rápida para proyectos frontend |
 
 
 
-## Aurretiazko baldintzak
+## Requisitos previos
 
 - [Node.js](https://nodejs.org/)
 - [npm](https://npmjs.com/)
 
 
-## Instalazioa
+## Instalación
 
 ```bash
-# 1. Klonatu biltegia
+# 1. Clona el repositorio
 git clone https://github.com/Wyxemon/Vendy.git
 
-# 2. Sartu direktorioan
+# 2. Entra en el directorio
 cd Vendy
 
-# 3. Instalatu dependentziak
+# 3. Instala las dependencias
 npm install
 ```
 
-## Exekuzioa
 
-Weba exekutatzeko, erabili hurrengo komandoa. Baliteke funtzio batzuk erabilgarri ez egotea, garapeneko bertsioa delako eta datu-basera sarbide mugatua duelako.
+## Ejecución
+
+Para ejecutar la web, usa el siguiente comando. Algunas funciones pueden no estar disponibles porque es una versión de desarrollo con acceso limitado a la base de datos.
 
 ```bash
-# Terminal 1 — Garapen zerbitzaria (Vite)
+# Terminal 1 — Servidor de desarrollo (Vite)
 npm run dev
 ```
 
-<sub>Irakaslea bazara edo sarbide osoa behar baduzu, email bat bidali dezakezu eskatzeko. Aste honetan behin-behinean gaituta egongo da.</sub>
+<sub>Si eres profesor o necesitas acceso completo, puedes enviarme un correo para solicitarlo. Esta semana estará habilitado temporalmente.</sub>
 
-## Egilea
+## Autor
 
 **Iñigo Viscarret Alvarez** · [@Wyxemon](https://github.com/Wyxemon)
-```
