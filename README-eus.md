@@ -19,13 +19,13 @@ Software hau Vendy aplikazioen suitearen parte da. **Vite** erabiliz garatu da, 
 
 Kasu honetan, Vendy 3 aplikazio nagusik eta administrazio tresna batek osatzen dute.
 
-[Vendy](https://react.dev/) → Zure denda sortzeko eta produktuak kudeatzeko web aplikazioa.
+[Vendy](https://github.com/Wyxemon/Vendy) → Zure denda sortzeko eta produktuak kudeatzeko web aplikazioa.
 
-[Vendy-desktop](https://vite.dev/) → Aurretik sortutako denda erakusteko mahaigaineko aplikazioa.
+[Vendy-desktop](https://github.com/Wyxemon/Vendy-desktop) → Aurretik sortutako denda erakusteko mahaigaineko aplikazioa.
 
-[Vendy-view](https://firebase.google.com/?hl=es-419) → Aurretik sortutako denda bistaratzeko web aplikazioa.
+[Vendy-view](https://github.com/Wyxemon/Vendy-view) → Aurretik sortutako denda bistaratzeko web aplikazioa.
 
-[Vendy-tool](https://firebase.google.com/?hl=es-419) → Datu-basea kudeatzeko tresna (segurtasun-kopiak).
+[Vendy-tool](https://github.com/Wyxemon/Vendy-tool) → Datu-basea kudeatzeko tresna (segurtasun-kopiak).
 
 ## Erabilitako teknologiak
 

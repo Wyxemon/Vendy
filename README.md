@@ -20,13 +20,13 @@ Este software forma parte de la suite de aplicaciones de Vendy. Ha sido desarrol
 
 En este caso, Vendy está compuesta por 3 aplicaciones principales y una herramienta de administración.
 
-[Vendy](https://react.dev/) → Aplicación web para crear tu tienda y administrar sus productos.
+[Vendy](https://github.com/Wyxemon/Vendy) → Aplicación web para crear tu tienda y administrar sus productos.
 
-[Vendy-desktop](https://vite.dev/) → Aplicación de escritorio para mostrar la tienda previamente creada.
+[Vendy-desktop](https://github.com/Wyxemon/Vendy-desktop) → Aplicación de escritorio para mostrar la tienda previamente creada.
 
-[Vendy-view](https://firebase.google.com/?hl=es-419) → Aplicación web para visualizar la tienda previamente creada.
+[Vendy-view](https://github.com/Wyxemon/Vendy-view) → Aplicación web para visualizar la tienda previamente creada.
 
-[Vendy-tool](https://firebase.google.com/?hl=es-419) → Herramienta para administrar la base de datos (copias de seguridad).
+[Vendy-tool](https://github.com/Wyxemon/Vendy-tool) → Herramienta para administrar la base de datos (copias de seguridad).
 
 
 ## Tecnologías utilizadas
