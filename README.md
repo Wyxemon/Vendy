@@ -16,6 +16,18 @@ Este software forma parte de la suite de aplicaciones de Vendy. Ha sido desarrol
 <sub>En caso de descargar el proyecto, es posible que debido a los sistemas de seguridad no puedas acceder a tu cuenta, ya que esta solo está disponible en la web oficial.</sub>
 
 
+## Suite completa
+
+En este caso, Vendy está compuesta por 3 aplicaciones principales y una herramienta de administración.
+
+[Vendy](https://react.dev/) → Aplicación web para crear tu tienda y administrar sus productos.
+
+[Vendy-desktop](https://vite.dev/) → Aplicación de escritorio para mostrar la tienda previamente creada.
+
+[Vendy-view](https://firebase.google.com/?hl=es-419) → Aplicación web para visualizar la tienda previamente creada.
+
+[Vendy-tool](https://firebase.google.com/?hl=es-419) → Herramienta para administrar la base de datos (copias de seguridad).
+
 
 ## Tecnologías utilizadas
 

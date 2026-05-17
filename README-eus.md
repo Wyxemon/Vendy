@@ -15,7 +15,17 @@ Software hau Vendy aplikazioen suitearen parte da. **Vite** erabiliz garatu da, 
 
 <sub>Proiektua deskargatzen baduzu, baliteke segurtasun sistemengatik zure kontuan ezin sartzea, hau web ofizialean bakarrik baitago erabilgarri.</sub>
 
+## Suite osoa
 
+Kasu honetan, Vendy 3 aplikazio nagusik eta administrazio tresna batek osatzen dute.
+
+[Vendy](https://react.dev/) → Zure denda sortzeko eta produktuak kudeatzeko web aplikazioa.
+
+[Vendy-desktop](https://vite.dev/) → Aurretik sortutako denda erakusteko mahaigaineko aplikazioa.
+
+[Vendy-view](https://firebase.google.com/?hl=es-419) → Aurretik sortutako denda bistaratzeko web aplikazioa.
+
+[Vendy-tool](https://firebase.google.com/?hl=es-419) → Datu-basea kudeatzeko tresna (segurtasun-kopiak).
 
 ## Erabilitako teknologiak
 
