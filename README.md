@@ -8,7 +8,7 @@ Este software forma parte de la suite de aplicaciones de Vendy. Ha sido desarrol
   <a href="https://vendyapp.vercel.app/">
     <img src="https://img.shields.io/badge/Ver_web-0078D6?style=for-the-badge&logo=googlechrome&logoColor=white" />
   </a>
-  <a href="https://github.com/Wyxemon/Vendy/README-eus.md">
+  <a href="https://github.com/Wyxemon/Vendy/blob/main/README-eus.md">
     <img src="https://img.shields.io/badge/Euskera-24292F?style=for-the-badge&logo=googletranslate&logoColor=white" />
   </a>
 </p>
