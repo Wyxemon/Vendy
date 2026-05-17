@@ -15,6 +15,7 @@ function Shop() {
   const name = user?.email.split("@")[0];
   const refTextarea = useRef(null);
 
+  // UseState
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const imgInputRef = useRef(null);
   const [imgBanner, setImgBanner] = useState(null);
@@ -22,7 +23,7 @@ function Shop() {
   const [valueTitle, setValueTitle] = useState("");
   const [valueDescription, setValueDescription] = useState("");
 
-  useLayoutEffect(() => { // lo mismo que useEffect pero se ejecuta antes de mostrar ui (evitar el parpadeo)
+  useLayoutEffect(() => { // lo mismo que useEffect pero se ejecuta antes de mostrar ui (evitar el parpadeo) textarea kalkulatzea scroll bar ez ateratzeko.
     const a = refTextarea.current;
     a.style.height = "auto";
     a.style.height = a.scrollHeight + "px";
@@ -30,6 +31,7 @@ function Shop() {
 
 
   useEffect(() => {
+    // datu basearen informazioa erakurri eta jarri
     readBannerImg(user?.email).then((img) => {
       if (img) {
         setImgBanner(img);

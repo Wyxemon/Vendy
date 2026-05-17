@@ -1,5 +1,7 @@
 import './AccountCreated.css';
 
+
+// mensaje para cuando creas tu cuenta
 function AccountCreated() {
     return (
         <div className="account-created-container">

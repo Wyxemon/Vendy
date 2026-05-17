@@ -8,7 +8,9 @@ import { storageUser, checkUserExists } from '../../firebase/auth';
 import Menu from './Menu/Menu';
 
 function Welcome() {
-    const navigate = useNavigate();
+    const navigate = useNavigate(); // nabigatzeko
+
+    // useState
     const [userObj, setUserObj] = useState(null);
     const [showRefresh, setShowRefresh] = useState(false);
     const [hideGenerate, setHideGenerate] = useState(false);
@@ -18,6 +20,8 @@ function Welcome() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
+
+        // login componentea gordetako erabiltzailearen datuak atera
         const storageUserData = localStorage.getItem('user');
 
         if (!storageUserData) {
@@ -30,7 +34,7 @@ function Welcome() {
     useEffect(() => {
         if (!userObj) return;
 
-        checkUserExists(userObj.email).then(exists => {
+        checkUserExists(userObj.email).then(exists => { // erabiltzailea denda gordeta duen jakito informazio hau userExists aldagaian gordeko da.
             setUserExists(exists);
             setLoading(false);
         });
@@ -42,22 +46,22 @@ function Welcome() {
 
     function handleGenerateCode() {
         setHideClass('hide');
-        setTimeout(() => {
+        setTimeout(() => { // 150ms itxaron hurrengo animazioa egiteko (atal hau zure dendaren kodea sortzerakoan egiten da.) 
             setHideGenerate(true);
             setShowRefresh(true);
         }, 150);
-        storageUser(userObj.email).then(() => {
+        storageUser(userObj.email).then(() => { // botoiari eman ete gero 1500ms itxaron menua atera arte.
             setTimeout(() => {
                 setShowMenu(true);
             }, 1500);
         });
     }
 
-    if (userExists || showMenu) {
+    if (userExists || showMenu) { // erabiltzaileak kontuan denda gordeta badu Menua erakutsi
         return (
             <Menu />
         )
-    } else if (!userExists && !showMenu) {
+    } else if (!userExists && !showMenu) { // aldiz ez bada, sortzeko botoia erakutsi
         return (
             <div id="div-dashboard">
                 <div id="div-dashboard-right">

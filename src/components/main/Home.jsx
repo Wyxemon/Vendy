@@ -12,11 +12,15 @@ import signature from '../../assets/firma.png'
 import openNew from '../../assets/openNew.svg'
 
 function Home() {
-  const navigate = useNavigate();
+  const navigate = useNavigate(); // web orrien artean nabegatzeko
+
+  // useState (aldagai batzuk bezalakoak)
   const [showLogin, setShowLogin] = useState(false);
   const [showRegister, setShowRegister] = useState(false);
 
   useEffect(() => {
+    // teklatu bidez itxi
+
     function closeWithKey(e) {
       if (e.key === 'Escape') {
         setShowLogin(false);
@@ -28,29 +32,32 @@ function Home() {
     return () => { window.removeEventListener('keydown', closeWithKey) };
   }, [showLogin]);
 
-  function login() {
+  function login() { // saioa hasteko menua erakutsi
     setShowLogin(true);
   }
 
-  function exampleUser() {
+  function exampleUser() { // adibidea erakutsi
     localStorage.setItem('user', JSON.stringify({ email: 'ejemplopublico@vendy.com' }));
     navigate('/dashboard');
   }
 
   function download() {
     const url = "https://github.com/Wyxemon/Vendy-desktop/releases/download/1.0.0/Vendy.exe";
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = "Vendy.exe";
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
+    const a = document.createElement('a'); // sortu a elementu bat 
+    
+    a.href = url; // hurrengo web gunetik
+    a.download = "Vendy.exe"; // hurrengo fitxategia descargatu
+    document.body.appendChild(a); // gehitu web orrian
+    a.click(); // fitxategia non utziko den ateratezko menua
+    document.body.removeChild(a); // kendu
   }
 
+  // interfaza
   return (
     <div className='div-main'>
-      {showLogin && <LoginWindow onClose={() => setShowLogin(false)} />}
-      {showRegister && <RegisterWindow onClose={() => setShowRegister(false)} />}
+      {showLogin && <LoginWindow onClose={() => setShowLogin(false)} />} {/*menua atera/kendu | true bada utziko du, false bada ez (showLogin)*/}
+      {showRegister && <RegisterWindow onClose={() => setShowRegister(false)} />} {/*menua atera/kendu | true bada utziko du, false bada ez (showRegister)*/}
+      
       <header>
         <img src={logo} alt="Vendy Logo" />
         <div>
@@ -71,7 +78,7 @@ function Home() {
           <button id='button-viewexample' onClick={exampleUser}>Ver un ejemplo</button>
         </div>
         <div id='div-iframe'>
-          <button onClick={() => {window.open('https://vendy-view.vercel.app/?email=ejemplo@vendy.com', '_blank')}}>
+          <button onClick={() => {window.open('https://vendy-view.vercel.app/?email=ejemplo@vendy.com', '_blank')}}> {/*web orri esteka ireki*/}
             <img src={openNew} alt="" />
           </button>
           <img src={arrowDown} alt="" />
@@ -92,7 +99,7 @@ function Home() {
               <img src={downloadImg} alt="Download" />
               Descargar Windows
             </button>
-            <a href="https://github.com/Wyxemon/Vendy-desktop/releases/download/1.0.0/Vendy-arm64.dmg" download>
+            <a href="https://github.com/Wyxemon/Vendy-desktop/releases/download/1.0.0/Vendy-arm64.dmg" download> {/*hurrengo estekatik fitxategia deskargatu*/}
               Descargar en MacOS
             </a>          </div>
           <div class="desktop-right">

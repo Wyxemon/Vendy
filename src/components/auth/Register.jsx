@@ -8,6 +8,8 @@ import { useSearchParams } from 'react-router-dom';
 
 function Register() {
     const [searchParams, setSearchParams] = useSearchParams();
+
+    // referentziak
     const emailRef = useRef();
     const passwordRef = useRef();
     const repeatPasswordRef = useRef();
@@ -16,10 +18,11 @@ function Register() {
     function handleRegister(event) {
         event.preventDefault();
 
+        // inputen balioak
         const email = emailRef.current?.value;
         const password = passwordRef.current?.value;
         const repeatPassword = repeatPasswordRef.current?.value;
-        if (password !== repeatPassword) {
+        if (password !== repeatPassword) { // pasahitza berdina
             alert("Las contraseñas no coinciden");
             return;
         }
@@ -29,6 +32,7 @@ function Register() {
         });
     }
 
+    // query
     const email = searchParams.get('email');
 
     return (
